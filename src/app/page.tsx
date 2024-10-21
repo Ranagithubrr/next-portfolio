@@ -1,3 +1,4 @@
+import Experience from '@/components/Experience/Experience'
 import Hero from '@/components/Hero/Hero'
 import Sidebar from '@/components/Sidebar/Sidebar'
 import SkillsSection from '@/components/Skill/SkillsSection'
@@ -9,6 +10,7 @@ const index = () => {
       <Sidebar />
       <Hero />
       <SkillsSection />
+      <Experience />
     </>
   )
 }

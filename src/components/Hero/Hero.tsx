@@ -74,7 +74,7 @@ const Hero = () => {
                 style={{ bottom: "15%", right: "15%" }}
                 animate={{ scale: [1, 1.5, 1] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-            />
+            />           
         </div>
     );
 };
