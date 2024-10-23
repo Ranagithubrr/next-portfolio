@@ -33,7 +33,6 @@ const Experience = () => {
                 Professional Experience
             </h2>
             <div className="relative max-w-4xl mx-auto">
-                {/* Vertical line */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -48,7 +47,6 @@ const Experience = () => {
                         transition={{ duration: 0.5, delay: index * 0.2 }}
                         className={`relative flex items-start mb-10 ${index % 2 === 0 ? "flex-row-reverse" : "flex-row"} justify-between`}
                     >
-                        {/* Experience Content */}
                         <div className={`bg-gray-800 rounded-lg p-6 shadow-lg max-w-md ${index % 2 === 0 ? "-mr-1" : ""}`}>
                             <h3 className="text-xl font-semibold text-teal-400">{experience.title}</h3>
                             <p className="text-sm text-gray-400">{experience.company}</p>
@@ -56,7 +54,6 @@ const Experience = () => {
                             <p>{experience.description}</p>
                         </div>
 
-                        {/* Connector dot */}
                         <div className="w-8 h-8 bg-teal-400 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
                     </motion.div>
                 ))}

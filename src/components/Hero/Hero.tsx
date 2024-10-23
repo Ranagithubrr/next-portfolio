@@ -20,8 +20,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="overflow-hidden h-screen relative bg-gradient-to-br from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center px-8">
-            {/* Content Section */}
+        <div className="overflow-hidden h-screen relative bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center px-8">
             <motion.div
                 className="text-center space-y-6"
                 variants={containerVariants}
@@ -43,7 +42,6 @@ const Hero = () => {
                     who loves building amazing web experiences with modern technologies.
                 </motion.p>
 
-                {/* Animated Social Icons */}
                 <div className="flex justify-center space-x-6">
                     {[
                         { icon: <FaGithub />, link: "#" },
@@ -62,19 +60,18 @@ const Hero = () => {
                     ))}
                 </div>
             </motion.div>
-            {/* Decorative Circles */}
             <motion.div
-                className="absolute w-80 h-80 rounded-full bg-teal-400 opacity-20 blur-xl pointer-events-none"
+                className="absolute w-80 h-80 rounded-full bg-teal-400 opacity-10 blur-xl pointer-events-none"
                 style={{ top: "10%", left: "10%" }}
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
             />
             <motion.div
-                className="absolute w-80 h-80 rounded-full bg-purple-500 opacity-10 blur-2xl"
-                style={{ bottom: "15%", right: "15%" }}
+                className="absolute w-80 h-80 rounded-full bg-purple-500 opacity-5 blur-2xl"
+                style={{ bottom: "25%", right: "15%" }}
                 animate={{ scale: [1, 1.5, 1] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-            />           
+            />
         </div>
     );
 };

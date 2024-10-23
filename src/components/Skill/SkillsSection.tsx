@@ -1,51 +1,49 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  RiReactjsFill, 
-  RiTailwindCssFill, 
-  RiNodejsFill 
+import {
+  RiReactjsFill,
+  RiTailwindCssFill,
+  RiNodejsFill
 } from 'react-icons/ri';
-import { 
-  SiJavascript, 
-  SiPython, 
-  SiMongodb, 
-  SiTypescript, 
-  SiGit 
+import {
+  SiJavascript,
+  SiPython,
+  SiMongodb,
+  SiTypescript,
+  SiGit
 } from 'react-icons/si';
 
-// Parent animation: applies stagger effect to children
+
 const containerVariants = {
   animate: {
     transition: {
-      staggerChildren: 0.2, // Delay between each child animation
+      staggerChildren: 0.2,
     },
   },
 };
 
-// Child animation: floating effect for each card
+
 const floatingVariants = {
   animate: {
-    y: [-15, 15, -15], // Smooth floating motion
+    y: [-15, 15, -15],
     transition: {
       duration: 3,
       repeat: Infinity,
-      repeatType: 'reverse',
-      ease: 'easeInOut',
+      repeatType: 'reverse' as const,
+      ease: 'easeInOut' as const,
     },
   },
 };
 
 const SkillsSection = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-gray-800 p-16">
+    <section className="bg-gradient-to-b from-gray-800 to-gray-900 p-16">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-teal-400 mb-6">Skills</h2>
         <p className="text-gray-300 mb-10">
           These are the technologies I work with.
         </p>
-
-        {/* Parent Motion div to apply stagger effect */}
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6 text-center px-4"
           variants={containerVariants}
