@@ -1,18 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import {
-  RiReactjsFill,
-  RiTailwindCssFill,
-  RiNodejsFill
-} from 'react-icons/ri';
-import {
-  SiJavascript,
-  SiPython,
-  SiMongodb,
-  SiTypescript,
-  SiGit
-} from 'react-icons/si';
+import { skillsData } from '@/constants/contants';
 
 
 const containerVariants = {
@@ -50,16 +39,7 @@ const SkillsSection = () => {
           initial="hidden"
           animate="animate"
         >
-          {[
-            { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
-            { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
-            { Icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
-            { Icon: SiPython, name: "Python", color: "text-blue-400" },
-            { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
-            { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
-            { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
-            { Icon: SiGit, name: "Git", color: "text-red-400" },
-          ].map((skill, index) => (
+          {skillsData.map((skill, index) => (
             <motion.div
               key={index}
               className="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transform transition duration-300"

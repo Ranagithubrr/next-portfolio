@@ -2,45 +2,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { projectsData } from "@/constants/contants";
 
-const projectsData = [
-    {
-        id: 1,
-        title: "E-Commerce Website",
-        description: "A fully functional e-commerce platform.",
-        tech: "fullstack",
-        link: "#",
-        image:
-            "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-        id: 2,
-        title: "Portfolio Website",
-        description: "A clean and interactive portfolio.",
-        tech: "react",
-        link: "#",
-        image:
-            "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-        id: 3,
-        title: "Real Estate App",
-        description: "Property listing platform with advanced filters.",
-        tech: "fullstack",
-        link: "#",
-        image:
-            "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-        id: 4,
-        title: "UI Kit Design",
-        description: "A collection of reusable UI components.",
-        tech: "ui",
-        link: "#",
-        image:
-            "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-];
 
 const FilterableProjects = () => {
     const [activeBtn, setActiveBtn] = useState("all");

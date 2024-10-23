@@ -1,30 +1,8 @@
 "use client"
 import React from "react";
 import { motion } from "framer-motion";
+import { experienceData } from "@/constants/contants";
 
-const experienceData = [
-    {
-        id: 1,
-        title: "Front End Developer",
-        company: "ABC Tech",
-        duration: "Jan 2020 - Present",
-        description: "Developed and maintained the front end of multiple web applications using React, Tailwind, and other modern technologies.",
-    },
-    {
-        id: 2,
-        title: "Web Developer",
-        company: "XYZ Solutions",
-        duration: "Jul 2018 - Dec 2019",
-        description: "Collaborated with designers and backend developers to create responsive websites and web applications.",
-    },
-    {
-        id: 3,
-        title: "Web Developer",
-        company: "XYZ Solutions",
-        duration: "Jul 2018 - Dec 2019",
-        description: "Collaborated with designers and backend developers to create responsive websites and web applications.",
-    },
-];
 
 const Experience = () => {
     return (

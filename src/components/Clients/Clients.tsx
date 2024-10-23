@@ -6,45 +6,7 @@ import "swiper/css/effect-coverflow"; // Import the coverflow effect styles
 import "swiper/css/pagination"; // Import pagination styles
 import { motion } from "framer-motion";
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
-
-
-const clientFeedbacks = [
-    {
-        id: 1,
-        name: "John Doe",
-        position: "CEO at ABC Corp",
-        feedback:
-            "Working with Masud was a pleasure! He delivered outstanding work and went above and beyond my expectations.",
-    },
-    {
-        id: 2,
-        name: "Jane Smith",
-        position: "CTO at XYZ Ltd",
-        feedback:
-            "Masud's expertise in front-end development was crucial in the success of our project. Highly recommended!",
-    },
-    {
-        id: 3,
-        name: "Mark Johnson",
-        position: "Product Manager at Tech Solutions",
-        feedback:
-            "Professional, creative, and very efficient. Masud delivered everything on time and with high quality.",
-    },
-    {
-        id: 4,
-        name: "Mark Johnson",
-        position: "Product Manager at Tech Solutions",
-        feedback:
-            "Professional, creative, and very efficient. Masud delivered everything on time and with high quality.",
-    },
-    {
-        id: 5,
-        name: "Mark Johnson",
-        position: "Product Manager at Tech Solutions",
-        feedback:
-            "Professional, creative, and very efficient. Masud delivered everything on time and with high quality.",
-    },
-];
+import { clientFeedbacksData } from "@/constants/contants";
 
 const Clients = () => {
     return (
@@ -61,20 +23,20 @@ const Clients = () => {
                 autoplay={{
                     delay: 3500,
                     disableOnInteraction: false,
-                }}             
-                loop={true}              
+                }}
+                loop={true}
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
                     depth: 100,
                     modifier: 1,
                     slideShadows: false,
-                }}                
+                }}
                 pagination={false}
                 modules={[Autoplay, EffectCoverflow, Pagination]}
                 className="mySwiper"
             >
-                {clientFeedbacks.map((client, index) => (
+                {clientFeedbacksData.map((client, index) => (
                     <SwiperSlide key={client.id} className="max-w-sm">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
