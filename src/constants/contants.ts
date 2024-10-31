@@ -8,6 +8,7 @@ import {
 } from "react-icons/si";
 
 // skills data
+// ********** if You add new colors, include them in the tailwind.config file safelist ***** //
 export const skillsData = [
   { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
   { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },

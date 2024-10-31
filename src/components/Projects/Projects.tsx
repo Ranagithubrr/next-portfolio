@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { projectsData } from "@/constants/contants";
+import InViewMotion from "../AnimationComp/Inviewmotion";
 
 
 const FilterableProjects = () => {
@@ -20,7 +21,8 @@ const FilterableProjects = () => {
     };
 
     return (
-        <section id="myComponent" className="p-8 bg-gray-900 px-20">
+        <InViewMotion>
+        <section id="projects" className="p-8 bg-gray-900 px-20">
             <h2 className="text-3xl font-bold text-white text-center mb-8">
                 My Projects
             </h2>
@@ -105,6 +107,7 @@ const FilterableProjects = () => {
                 </AnimatePresence>
             </motion.div>
         </section>
+        </InViewMotion>
     );
 };
 
