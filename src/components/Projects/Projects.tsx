@@ -89,7 +89,7 @@ const FilterableProjects = () => {
                                         >
                                             View Details &rarr;
                                         </a>
-                                        <div className="lg:flex space-x-2 mt-2 lg:mt-0 hidden lg:block">
+                                        <div className="lg:flex space-x-2 mt-2 lg:mt-0 hidden">
                                             <span className="px-3 py-1 text-sm bg-gray-800 text-teal-300 rounded-full">
                                                 React
                                             </span>
