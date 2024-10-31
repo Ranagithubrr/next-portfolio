@@ -29,10 +29,11 @@ const Hero = () => {
                     animate="visible"
                 >
                     <motion.h1
-                        className="text-5xl font-extrabold tracking-wide"
+                        className="text-4xl lg:text-5xl font-extrabold tracking-wide"
                         variants={itemVariants}
                     >
-                        Hello, I&apos;m <span className="text-teal-400">Masud Rana</span>
+                        Hello, I&apos;m <span className="text-teal-400">Mahabur Rahman
+                        </span>
                     </motion.h1>
 
                     <motion.p
@@ -45,9 +46,9 @@ const Hero = () => {
 
                     <div className="flex justify-center space-x-6">
                         {[
-                            { icon: <FaGithub />, link: "#" },
-                            { icon: <FaLinkedin />, link: "#" },
-                            { icon: <FaWhatsapp />, link: "#" },
+                            { icon: <FaGithub />, link: "https://github.com/mahabur-rahman" },
+                            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/mahabur-annur/" },
+                            { icon: <FaWhatsapp />, link: "https://wa.me/01626924395" },
                         ].map((item, index) => (
                             <motion.a
                                 key={index}
