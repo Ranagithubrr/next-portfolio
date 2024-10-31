@@ -31,8 +31,10 @@ const SkillsSection = () => {
     <section id="skills" className="bg-gradient-to-b from-gray-800 to-gray-900 p-16">
       <InViewMotion>
         <div
-          className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-teal-400 mb-6">Skills</h2>
+          className="max-w-7xl mx-auto text-center">          
+          <h2 className="text-3xl font-bold text-center mb-10">
+                        Skills
+                    </h2>
           <p className="text-gray-300 mb-10">
             These are the technologies I work with.
           </p>

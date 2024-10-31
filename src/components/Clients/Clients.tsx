@@ -11,7 +11,7 @@ import { clientFeedbacksData } from "@/constants/contants";
 const Clients = () => {
     return (
         <div className="bg-gray-900 text-white py-20 px-20">
-            <h2 className="text-4xl font-extrabold text-center mb-12 text-teal-400">
+            <h2 className="text-3xl font-bold text-center mb-10">
                 Client Feedback
             </h2>
 
