@@ -22,7 +22,7 @@ const FilterableProjects = () => {
 
     return (
         <InViewMotion>
-        <section id="projects" className="p-8 bg-gray-900 px-20">
+        <section id="projects" className="p-8 bg-gray-900 lg:px-20">
             <h2 className="text-3xl font-bold text-white text-center mb-8">
                 My Projects
             </h2>
@@ -82,14 +82,14 @@ const FilterableProjects = () => {
                                     <p className="text-gray-400 mt-2">
                                         This is a short description of the project. It explains the purpose, tools, and technologies used.
                                     </p>
-                                    <div className="flex items-center justify-between mt-4">
+                                    <div className="lg:flex items-center justify-between mt-4">
                                         <a
                                             href="#"
                                             className="text-teal-400 hover:text-teal-300 font-medium transition-colors"
                                         >
                                             View Details &rarr;
                                         </a>
-                                        <div className="flex space-x-2">
+                                        <div className="lg:flex space-x-2 mt-2 lg:mt-0 hidden lg:block">
                                             <span className="px-3 py-1 text-sm bg-gray-800 text-teal-300 rounded-full">
                                                 React
                                             </span>
