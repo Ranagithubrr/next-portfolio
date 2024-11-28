@@ -1,19 +1,22 @@
-"use client"
-import React, { useState } from 'react';
-import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
+"use client";
+import React, { useState } from "react";
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const [feedback, setFeedback] = useState('');
+  const [feedback, setFeedback] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -23,50 +26,49 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setFeedback('');
+    setFeedback("Please Wait . . .");
+    setLoading(true);
 
     try {
-      const response = await fetch('/api/sendmail', {
-        method: 'POST',
+      const response = await fetch("/api/sendmail", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       const result = await response.json();
-
       if (response.ok) {
-        setFeedback('Email sent successfully!');
-        // Clear the form
+        setFeedback("Email sent successfully!");
         setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
         });
       } else {
         setFeedback(`Error: ${result.message}`);
       }
     } catch (error) {
-      console.error('Error sending email:', error);
-      setFeedback('Error sending email. Please try again later.');
+      console.error("Error sending email:", error);
+      setFeedback("Error sending email. Please try again later.");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <section id="contact">
       <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-10 pb-32 lg:pb-0">
-
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Get In Touch
-        </h2>
+        <h2 className="text-3xl font-bold text-center mb-10">Get In Touch</h2>
 
         <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="space-y-6">
             <h2 className="text-2xl font-medium">Contact Information</h2>
             <p className="text-gray-400">
-              I would love to hear from you! Feel free to reach out through any of the following methods:
+              I would love to hear from you! Feel free to reach out through any
+              of the following methods:
             </p>
 
             <div className="space-y-4">
@@ -99,7 +101,10 @@ const Contact = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-gray-800 p-8 rounded-xl shadow-lg space-y-6">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-gray-800 p-8 rounded-xl shadow-lg space-y-6"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 type="text"
@@ -148,7 +153,15 @@ const Contact = () => {
               Send Message
             </button>
 
-            {feedback && <p className="mt-4 text-center text-green-400">{feedback}</p>}
+            {feedback && (
+              <p
+                className={`mt-4 text-center ${
+                  loading ? "text-white" : "text-green-400"
+                }`}
+              >
+                {feedback}
+              </p>
+            )}
           </form>
         </div>
       </div>
