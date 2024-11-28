@@ -29,7 +29,7 @@ const Experience = () => {
                                 transition={{ duration: 0.5, delay: index * 0.2 }}
                                 className={`relative flex items-start mb-10 ${index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"} justify-between`}
                             >
-                                <div className={`bg-gray-800 rounded-lg p-6 ml-5 shadow-lg max-w-md ${index % 2 === 0 ? "-mr-1" : ""}`}>
+                                <div className={`bg-gray-800 rounded-lg p-6 ml-2 lg:ml-0 shadow-lg max-w-md ${index % 2 === 0 ? "-mr-1" : "mr-2"}`}>
                                     <h3 className="text-xl font-semibold text-teal-400">{experience.title}</h3>
                                     <p className="text-sm text-gray-400">{experience.company}</p>
                                     <span className="block text-gray-400 mb-2">{experience.duration}</span>
