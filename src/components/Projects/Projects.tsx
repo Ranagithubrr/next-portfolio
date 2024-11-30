@@ -82,7 +82,7 @@ const FilterableProjects = () => {
                                     <p className="text-gray-400 mt-2">
                                         This is a short description of the project. It explains the purpose, tools, and technologies used.
                                     </p>
-                                    <div className="lg:flex items-center justify-between mt-4">
+                                    <div className="xl:flex items-center justify-between mt-4">
                                         <a
                                             href="#"
                                             className="text-teal-400 hover:text-teal-300 font-medium transition-colors"
