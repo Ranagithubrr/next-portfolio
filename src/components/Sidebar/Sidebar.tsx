@@ -114,7 +114,7 @@ const Sidebar = () => {
               onClick={() => scrollToSection(item.sectionId)}
           >
             <item.icon
-              className={`text-teal-300 text-3xl cursor-pointer transition-colors duration-300 ${activeSection === item.sectionId ? "text-white" : ""
+              className={`text-teal-300 text-2xl lg:text-3xl cursor-pointer transition-colors duration-300 ${activeSection === item.sectionId ? "text-white" : ""
                 }`}
             />
           </motion.div>
