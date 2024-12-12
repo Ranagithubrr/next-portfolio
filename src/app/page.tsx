@@ -9,7 +9,7 @@ import React from 'react'
 
 const index = () => {
   return (
-    <>
+    <div className='bg-gray-900'>
       <Sidebar />
       <Hero />
       <SkillsSection />
@@ -17,7 +17,7 @@ const index = () => {
       <Clients />
       <FilterableProjects />
       <Contact />
-    </>
+    </div>
   )
 }
 
