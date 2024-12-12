@@ -6,7 +6,7 @@ import "swiper/css/effect-coverflow"; // Import the coverflow effect styles
 import "swiper/css/pagination"; // Import pagination styles
 import { motion } from "framer-motion";
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
-import { clientFeedbacksData } from "@/constants/contants";
+import { clientFeedbacksData } from "@/constants/constants";
 
 const Clients = () => {
     return (

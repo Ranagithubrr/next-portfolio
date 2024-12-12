@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { skillsData } from '@/constants/contants';
+import { skillsData } from '@/constants/constants';
 import InViewMotion from './../AnimationComp/Inviewmotion';
 
 

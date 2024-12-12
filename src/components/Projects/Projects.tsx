@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { projectsData } from "@/constants/contants";
+import { projectsData } from "@/constants/constants";
 import InViewMotion from "../AnimationComp/Inviewmotion";
 
 

@@ -28,6 +28,7 @@ export const experienceData = [
     duration: "Jan 2020 - Present",
     description:
       "Developed and maintained the front end of multiple web applications using React, Tailwind, and other modern technologies.",
+      logo:''
   },
   {
     id: 2,
