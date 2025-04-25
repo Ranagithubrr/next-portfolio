@@ -6,7 +6,8 @@ import {
   SiTypescript,
   SiGit,
 } from "react-icons/si";
-import PropadyaLogo from '../img/propadya.svg';
+import PropadyaLogo from "../img/propadya.svg";
+import SomoyPayLogo from "../img/somoypay.png";
 
 // skills data
 // ********** if You add new colors, include them in the tailwind.config file safelist ***** //
@@ -24,29 +25,30 @@ export const skillsData = [
 export const experienceData = [
   {
     id: 1,
-    title: "Front End Developer",
-    company: "ABC Tech",
-    duration: "Jan 2020 - Present",
+    title: "Front-end Web Developer",
+    company: "Propadya LLC",
+    duration: "Jun 2024 - Present",
     description:
-      "Developed and maintained the front end of multiple web applications using React, Tailwind, and other modern technologies.",
-    logo: "https://niftyitsolution.com/wp-content/uploads/2024/06/nifty_thumbs-1.png",
+      "Developed responsive UIs for real estate applications, ensuring usability and performance. Integrated APIs and optimized speed, enhancing functionality and user engagement. Increased performance by 30% through optimizations and API integrations",
+    logo: PropadyaLogo,
   },
   {
     id: 2,
-    title: "Web Developer",
-    company: "XYZ Solutions",
-    duration: "Jul 2018 - Dec 2019",
+    title: "Junior Front-end Developer",
+    company: "SomoyPay",
+    duration: "Feb 2024 - May 2014",
     description:
-      "Collaborated with designers and backend developers to create responsive websites and web applications.",
-      logo: PropadyaLogo
+      "Built a high-performance payment gateway app with scalable features to optimize transactions and enhance client engagement. Designed and implemented core logic to streamline workflows and boost functionality. Improved response times for faster data handling, delivering a smooth and responsive user experience throughout the app",
+    logo: SomoyPayLogo,
   },
   {
     id: 3,
-    title: "Web Developer",
-    company: "XYZ Solutions",
-    duration: "Jul 2018 - Dec 2019",
+    title: "Front-end Developer Intern",
+    company: "Nifty IT Solution",
+    duration: "Sep 2023 - Nov 2023",
     description:
-      "Collaborated with designers and backend developers to create responsive websites and web applications.",
+      "Contributed to web development projects using React, TypeScript, and GraphQL, gaining hands-on experiencein modern technologies. Developed front-end features and enhanced applications with React and TypeScript",
+    logo: "https://niftyitsolution.com/wp-content/uploads/2024/06/nifty_thumbs-1.png",
   },
 ];
 
