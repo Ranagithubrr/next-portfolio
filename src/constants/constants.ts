@@ -5,6 +5,15 @@ import {
   SiMongodb,
   SiTypescript,
   SiGit,
+  SiNextdotjs,
+  SiAntdesign,
+  SiAxios,
+  SiFirebase,
+  SiFramer,
+  SiGraphql,
+  SiMui,
+  SiRedux,
+  SiSwiper,
 } from "react-icons/si";
 import PropadyaLogo from "../img/propadya.svg";
 import SomoyPayLogo from "../img/somoypay.png";
@@ -13,13 +22,21 @@ import SomoyPayLogo from "../img/somoypay.png";
 // ********** if You add new colors, include them in the tailwind.config file safelist ***** //
 export const skillsData = [
   { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
+  { Icon: SiNextdotjs, name: "Next.js", color: "text-black" },
   { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
   { Icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
-  { Icon: SiPython, name: "Python", color: "text-blue-400" },
+  { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
   { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
   { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
-  { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
   { Icon: SiGit, name: "Git", color: "text-red-400" },
+  { Icon: SiRedux, name: "Redux", color: "text-purple-600" },
+  { Icon: SiGraphql, name: "GraphQL", color: "text-pink-400" },
+  { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
+  { Icon: SiAntdesign, name: "Ant Design", color: "text-blue-600" },
+  { Icon: SiMui, name: "MUI", color: "text-blue-500" },
+  { Icon: SiSwiper, name: "Swiper", color: "text-purple-400" },
+  { Icon: SiFramer, name: "Framer Motion", color: "text-pink-500" },
+  { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
 ];
 // experience data
 export const experienceData = [
