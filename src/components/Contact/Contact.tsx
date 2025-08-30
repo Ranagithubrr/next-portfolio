@@ -73,25 +73,35 @@ const Contact = () => {
 
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <span className="p-3 bg-blue-600 rounded-full">
-                  <FiPhone />
-                </span>
-                <p>+123 456 789</p>
-              </div>
-              <div className="flex items-center space-x-4">
-                <span className="p-3 bg-green-500 rounded-full">
-                  <FaWhatsapp />
-                </span>
-                <p>+123 456 789</p>
+                <a href="tel:+8801996722640" className="flex items-center space-x-4">
+                  <span className="p-3 bg-blue-600 rounded-full">
+                    <FiPhone />
+                  </span>
+                  <p>+880-1996-722-640</p>
+                </a>
               </div>
 
               <div className="flex items-center space-x-4">
-                <span className="p-3 bg-red-600 rounded-full">
-                  <FiMail />
-                </span>
-                <p>your-email@example.com</p>
+                <a
+                  href="https://wa.me/8801996722640"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4"
+                >
+                  <span className="p-3 bg-green-500 rounded-full">
+                    <FaWhatsapp />
+                  </span>
+                  <p>+880-1996-722-640</p>
+                </a>
               </div>
-
+              <div className="flex items-center space-x-4">
+                <a href="mailto:ranarr.dev@gmail.com" className="flex items-center space-x-4">
+                  <span className="p-3 bg-red-600 rounded-full">
+                    <FiMail />
+                  </span>
+                  <p>ranarr.dev@gmail.com</p>
+                </a>
+              </div>
               <div className="flex items-center space-x-4">
                 <span className="p-3 bg-teal-600 rounded-full">
                   <FiMapPin />
@@ -117,7 +127,7 @@ const Contact = () => {
               />
               <input
                 type="email"
-                name="email" // Added name attribute
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
@@ -155,9 +165,8 @@ const Contact = () => {
 
             {feedback && (
               <p
-                className={`mt-4 text-center ${
-                  loading ? "text-white" : "text-green-400"
-                }`}
+                className={`mt-4 text-center ${loading ? "text-white" : "text-green-400"
+                  }`}
               >
                 {feedback}
               </p>
