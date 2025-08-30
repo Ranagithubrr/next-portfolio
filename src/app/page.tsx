@@ -1,4 +1,3 @@
-import Clients from '@/components/Clients/Clients'
 import Contact from '@/components/Contact/Contact'
 import Experience from '@/components/Experience/Experience'
 import Hero from '@/components/Hero/Hero'
@@ -23,7 +22,6 @@ const index = () => {
         <Hero />
         <SkillsSection />
         <Experience />
-        <Clients />
         <FilterableProjects />
         <Contact />
       </main>
