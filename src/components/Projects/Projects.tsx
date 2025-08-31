@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import InViewMotion from "../AnimationComp/Inviewmotion";
 import GridViewProjects from "./GridViewProjects";
+import ListviewProjects from "./ListviewProjects";
 
 const FilterableProjects = () => {
-    const [activeView, setActiveView] = useState<"grid" | "list">("grid");
+    const [activeView, setActiveView] = useState<"grid" | "list">("list");
     const [isFlipping, setIsFlipping] = useState(false);
 
     const handleChangeView = (view: "grid" | "list") => {
@@ -30,19 +31,20 @@ const FilterableProjects = () => {
                 <div className="flex justify-center ms-auto gap-2 w-52 relative border-teal-400 border-2 rounded-full overflow-hidden">
                     <div
                         className="z-10 h-full cursor-pointer p-2"
-                        onClick={() => handleChangeView("grid")}
-                    >
-                        Grid View
-                    </div>
-                    <div
-                        className="z-10 h-full cursor-pointer p-2"
                         onClick={() => handleChangeView("list")}
                     >
                         Slide View
                     </div>
+                    <div
+                        className="z-10 h-full cursor-pointer p-2"
+                        onClick={() => handleChangeView("grid")}
+                    >
+                        Grid View
+                    </div>
+
                     <motion.div
                         className="bg-teal-500 w-1/2 h-full absolute top-0 left-0"
-                        animate={{ x: activeView === "grid" ? 0 : "100%" }}
+                        animate={{ x: activeView === "list" ? 0 : "100%" }}
                         transition={{ type: "tween", duration: 0.3 }}
                     />
                 </div>
@@ -54,8 +56,8 @@ const FilterableProjects = () => {
                     {activeView === "grid" ? (
                         <GridViewProjects />
                     ) : (
-                        <div className="bg-gray-800 text-white p-10 rounded-xl">
-                            Slide / List View Content
+                        <div className="text-white p-6 rounded-xl">
+                            <ListviewProjects />
                         </div>
                     )}
                 </motion.div>
