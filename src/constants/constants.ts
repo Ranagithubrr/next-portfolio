@@ -145,17 +145,17 @@ export const projectsData = [
     description:
       "An internal dashboard to manage all property listings, agents, and content for the Propadya website. Features secure authentication and advanced filtering options for efficient management.",
     tech: "React, Redux Toolkit, Ant Design, REST API",
-    link: "#", // replace with actual dashboard link if deployed
+    link: "https://app.propadya.com", 
     image: PropadyaDashboardImage,
     category: "web-app",
   },
   {
     id: 3,
-    title: "Slope Medical Solution",
+    title: "Prime Clinic Healthcare System",
     description:
-      "A complete healthcare management system with a dynamic website and content dashboard. Built to manage doctors, services, and medical resources seamlessly.",
+      "A comprehensive healthcare management platform featuring a responsive website and an admin dashboard. Designed to efficiently manage doctors, appointments, services, and patient records with ease.",
     tech: "React, Nest.js, Tailwind CSS, REST API",
-    link: "#", // add real link if deployed
+    link: "https://primeclinic24.com/",
     image: PrimeClinicImage,
     category: "web-site",
   },
@@ -165,7 +165,7 @@ export const projectsData = [
     description:
       "A digital payment ecosystem with three integrated platforms — website, merchant panel, and admin dashboard — built to handle transactions and user management efficiently.",
     tech: "React, Redux Toolkit, Ant Design, REST API",
-    link: "#", // optional
+    link: "https://somoypay.vercel.app/", 
     image: SomoypayWebsiteImage,
     category: "web-site",
   },
@@ -175,7 +175,7 @@ export const projectsData = [
     description:
       "A responsive company website highlighting services, projects, and team members. Built with modern UI design and optimized performance.",
     tech: "Next.js, Tailwind CSS, Framer Motion",
-    link: "#", // add live link if available
+    link: "https://pria-crm-frontend-landing-page.vercel.app/", // add live link if available
     image: PriaWebsiteImage,
     category: "web-site",
   },
@@ -185,7 +185,7 @@ export const projectsData = [
     description:
       "A digital agency portfolio showcasing case studies, services, and creative work. Designed for a sleek and professional presentation.",
     tech: "Next.js, TypeScript, Tailwind CSS",
-    link: "#", // optional
+    link: "https://nexorabyte.com/",
     image: NexoraByteImage,
     category: "web-site",
   },
@@ -195,7 +195,7 @@ export const projectsData = [
     description:
       "A comprehensive merchant portal for managing transactions, orders, and reports. Built with Next.js, TypeScript, and Tailwind CSS for a responsive and fast experience.",
     tech: "Next.js, TypeScript, Tailwind CSS",
-    link: "#", // optional
+    link: "#", 
     image: SomoypayMerchantImage,
     category: "web-app",
   },
@@ -205,7 +205,7 @@ export const projectsData = [
     description:
       "An admin panel for overseeing all merchant activities, user management, and analytics. Developed using Next.js, TypeScript, and Tailwind CSS for a scalable and maintainable solution.",
     tech: "Next.js, TypeScript, Tailwind CSS",
-    link: "#", // optional
+    link: "https://somoypay-admin.vercel.app/",
     image: SomoypayAdminImage,
     category: "web-app",
   },
