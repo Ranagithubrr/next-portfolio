@@ -28,7 +28,7 @@ const floatingVariants = {
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="bg-gradient-to-b from-gray-800 to-gray-900 lg:p-16">
+    <section id="skills" className="bg-gradient-to-b from-gray-800 to-gray-900 lg:p-16 lg:px-20">
       <InViewMotion>
         <div
           className="max-w-7xl mx-auto text-center">
