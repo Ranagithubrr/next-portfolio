@@ -1,6 +1,7 @@
 import { projectsData } from '@/constants/constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const GridViewProjects = () => {
@@ -13,16 +14,16 @@ const GridViewProjects = () => {
         if (btn === "all") {
             setFilteredData(projectsData);
         } else {
-            setFilteredData(projectsData.filter((item) => item.tech === btn));
+            setFilteredData(projectsData.filter((item) => item.category === btn));
         }
     };
     return (
         <div>
             <div className="flex justify-center space-x-4 mb-8">
-                {["all", "react", "ui"].map((btn) => (
+                {["all", "web-site", "web-app"].map((btn) => (
                     <motion.button
                         key={btn}
-                        whileHover={{ scale: 1.1 }} // Slight scaling on hover
+                        whileHover={{ scale: 1.1 }}
                         className={`relative px-5 py-1 rounded-full font-medium border-2 overflow-hidden 
                              transition-all duration-300 
                              ${activeBtn === btn ? "text-white border-teal-700" : "text-white border-teal-700"}`}
@@ -58,43 +59,46 @@ const GridViewProjects = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 1, scale: 0 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
-                            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="bg-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                         >
-                            <div className="max-w-sm bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
-                                <Image
-                                    className="w-full h-48 object-cover"
-                                    src={item.image}
-                                    alt="Project Image"
-                                    width={100}
-                                    height={100}
-                                />
-                                <div className="p-6">
-                                    <h2 className="text-2xl font-semibold text-white">Project Title</h2>
-                                    <p className="text-gray-400 mt-2">
-                                        This is a short description of the project. It explains the purpose, tools, and technologies used.
+                            <div className="flex flex-col h-full max-w-sm bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
+                                {/* Image */}
+                                <div className="w-full h-48 relative flex-shrink-0">
+                                    <Image
+                                        className="w-full h-full object-cover"
+                                        src={item.image}
+                                        alt="Project Image"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 500px"
+                                    />
+                                </div>
+
+                                {/* Content */}
+                                <div className="p-6 flex flex-col flex-1">
+                                    <h2 className="text-xl font-semibold text-white">{item.title}</h2>
+                                    <p className="text-gray-400 mt-2 line-clamp-3 flex-1">
+                                        {item.description}
                                     </p>
-                                    <div className="xl:flex items-center justify-between mt-4">
-                                        <a
-                                            href="#"
+
+                                    <div className="mt-4 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-2 xl:gap-0">
+                                        <Link
+                                            href={item.link}
+                                            target='_blank'
                                             className="text-teal-400 hover:text-teal-300 font-medium transition-colors"
                                         >
                                             View Details &rarr;
-                                        </a>
-                                        <div className="lg:flex space-x-2 mt-2 lg:mt-0 hidden">
+                                        </Link>
+                                        <div className="flex space-x-2 mt-2 xl:mt-0">
                                             <span className="px-3 py-1 text-sm bg-gray-800 text-teal-300 rounded-full">
-                                                React
-                                            </span>
-                                            <span className="px-3 py-1 text-sm bg-gray-800 text-teal-300 rounded-full">
-                                                Tailwind CSS
+                                             Featured Project
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
                         </motion.div>
                     ))}
+
                 </AnimatePresence>
             </motion.div>
         </div>

@@ -33,11 +33,11 @@ const ListviewProjects: React.FC = () => {
                 speed={1200}
                 loop={true}
                 autoHeight={true}
-                // autoplay={{
-                //   delay: 2500,
-                //   disableOnInteraction: false,
-                //   pauseOnMouseEnter: true,
-                // }}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }}
                 cubeEffect={{
                     shadow: true,
                     slideShadows: true,

@@ -18,7 +18,7 @@ import {
 import PropadyaLogo from "../img/propadya.svg";
 import SomoyPayLogo from "../img/somoypay.png";
 
-import PropadyaWebsiteImage from "../img/projects/pria-website.png";
+import PropadyaWebsiteImage from "../img/projects/prorpadya-site.png";
 import PropadyaDashboardImage from "../img/projects/propadya.png";
 import NexoraByteImage from "../img/projects/nexorabyte.png";
 
@@ -130,6 +130,7 @@ export const projectsData = [
     tech: "React, Ant Design, Redux Toolkit, ImageKit, REST API",
     link: "https://propadya.com", // update if live
     image: PropadyaWebsiteImage,
+    category: "web-site",
   },
   {
     id: 2,
@@ -139,6 +140,7 @@ export const projectsData = [
     tech: "React, Redux Toolkit, Ant Design, REST API",
     link: "#", // replace with actual dashboard link if deployed
     image: PropadyaDashboardImage,
+    category: "web-app",
   },
   {
     id: 3,
@@ -148,6 +150,7 @@ export const projectsData = [
     tech: "React, Nest.js, Tailwind CSS, REST API",
     link: "#", // add real link if deployed
     image: PrimeClinicImage,
+    category: "web-site",
   },
   {
     id: 4,
@@ -157,16 +160,7 @@ export const projectsData = [
     tech: "React, Redux Toolkit, Ant Design, REST API",
     link: "#", // optional
     image: SomoypayWebsiteImage,
-    subProjects: [
-      {
-        name: "Merchant Dashboard",
-        image: SomoypayMerchantImage,
-      },
-      {
-        name: "Admin Dashboard",
-        image: SomoypayAdminImage,
-      },
-    ],
+    category: "web-site",
   },
   {
     id: 5,
@@ -176,6 +170,7 @@ export const projectsData = [
     tech: "Next.js, Tailwind CSS, Framer Motion",
     link: "#", // add live link if available
     image: PriaWebsiteImage,
+    category: "web-site",
   },
   {
     id: 6,
@@ -185,5 +180,27 @@ export const projectsData = [
     tech: "Next.js, TypeScript, Tailwind CSS",
     link: "#", // optional
     image: NexoraByteImage,
+    category: "web-site",
   },
+  {
+    id: 7,
+    title: "Somoypay Merchant Dashboard",
+    description:
+      "A comprehensive merchant portal for managing transactions, orders, and reports. Built with Next.js, TypeScript, and Tailwind CSS for a responsive and fast experience.",
+    tech: "Next.js, TypeScript, Tailwind CSS",
+    link: "#", // optional
+    image: SomoypayMerchantImage,
+    category: "web-app",
+  },
+  {
+    id: 8,
+    title: "Somoypay Admin Panel",
+    description:
+      "An admin panel for overseeing all merchant activities, user management, and analytics. Developed using Next.js, TypeScript, and Tailwind CSS for a scalable and maintainable solution.",
+    tech: "Next.js, TypeScript, Tailwind CSS",
+    link: "#", // optional
+    image: SomoypayAdminImage,
+    category: "web-app",
+  },
+
 ];

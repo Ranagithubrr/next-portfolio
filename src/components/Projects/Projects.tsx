@@ -22,13 +22,17 @@ const FilterableProjects = () => {
         <InViewMotion>
             <section
                 id="projects"
-                className="p-8 bg-gray-900 lg:px-20 max-w-screen-2xl mx-auto"
+                className="p-8 bg-gray-900 lg:px-20 md:max-w-screen-2xl mx-auto"
             >
-                <h2 className="text-3xl font-bold text-white text-center mb-8">
-                    My Projects
+                <h2 className="text-3xl font-bold text-white text-center mb-6">
+                    Contributed Projects
                 </h2>
+                <p className="text-gray-300 text-center mb-10 md:max-w-3xl mx-auto">
+                    A showcase of web applications I have built and contributed to, highlighting modern technologies, real-world functionality, and responsive, user-friendly designs.
+                </p>
 
-                <div className="flex justify-center ms-auto gap-2 w-52 relative border-teal-400 border-2 rounded-full overflow-hidden">
+
+                <div className="flex justify-center mx-auto md:mx-0 md:ms-auto gap-2 w-52 relative border-teal-400 border-2 rounded-full overflow-hidden">
                     <div
                         className="z-10 h-full cursor-pointer p-2"
                         onClick={() => handleChangeView("list")}
