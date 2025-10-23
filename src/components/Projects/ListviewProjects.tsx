@@ -60,7 +60,7 @@ const ListviewProjects: React.FC = () => {
             </Swiper>
 
             {/* ✅ Custom navigation buttons (only once) */}
-            <div className="flex justify-end gap-6 mt-4">
+            <div className="flex justify-end gap-6 mt-4 2xl:mt-16">
                 <button ref={prevRef} className="text-3xl text-teal-500 hover:text-teal-300 transition">
                     <FaArrowCircleLeft />
                 </button>

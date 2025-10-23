@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div
             className="mx-auto bg-gray-900 rounded-2xl overflow-hidden
         shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.25)]
-        transition-all duration-300 max-w-7xl h-[600px] md:h-[300px]"
+        transition-all duration-300 max-w-7xl h-[600px] md:h-[300px] 2xl:h-[350px]"
         >
             <div className="flex flex-col md:flex-row">
                 {/* Left Image */}
