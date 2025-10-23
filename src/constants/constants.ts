@@ -13,6 +13,10 @@ import {
   SiMui,
   SiRedux,
   SiSwiper,
+  SiCss3,
+  SiExpress,
+  SiHtml5,
+  SiVercel,
 } from "react-icons/si";
 
 import NiftyItSolutionLogo from "../img/nifty.png";
@@ -36,21 +40,26 @@ import PriaWebsiteImage from "../img/projects/pria-website.png";
 export const skillsData = [
   { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
   { Icon: SiNextdotjs, name: "Next.js", color: "text-black" },
-  { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
   { Icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
   { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
-  { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
-  { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
-  { Icon: SiGit, name: "Git", color: "text-red-400" },
-  { Icon: SiRedux, name: "Redux", color: "text-purple-600" },
-  { Icon: SiGraphql, name: "GraphQL", color: "text-pink-400" },
-  { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
+  { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
+  { Icon: SiMui, name: "Material UI", color: "text-blue-500" },
   { Icon: SiAntdesign, name: "Ant Design", color: "text-blue-600" },
-  { Icon: SiMui, name: "MUI", color: "text-blue-500" },
+  { Icon: SiRedux, name: "Redux Toolkit", color: "text-purple-600" },
+  { Icon: SiGraphql, name: "GraphQL", color: "text-pink-400" },
+  { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
+  { Icon: SiExpress, name: "Express.js", color: "text-gray-500" },
+  { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
+  { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
+  { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
+  { Icon: SiGit, name: "Git", color: "text-red-400" },
+  { Icon: SiHtml5, name: "HTML5", color: "text-orange-500" },
+  { Icon: SiCss3, name: "CSS3", color: "text-blue-400" },
   { Icon: SiSwiper, name: "Swiper", color: "text-purple-400" },
   { Icon: SiFramer, name: "Framer Motion", color: "text-pink-500" },
-  { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
+  { Icon: SiVercel, name: "Vercel", color: "text-black" }, // Optional
 ];
+
 // experience data
 export const experienceData = [
   {
