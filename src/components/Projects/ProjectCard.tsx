@@ -21,24 +21,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div
             className="mx-auto bg-gray-900 rounded-2xl overflow-hidden
         shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.25)]
-        transition-all duration-300 max-w-7xl"
+        transition-all duration-300 max-w-7xl h-[600px] md:h-[300px]"
         >
             <div className="flex flex-col md:flex-row">
                 {/* Left Image */}
-                <div className="md:w-1/2 w-full h-80 md:h-[250px] relative">
-                    <Image
-                        src={image}
-                        alt={title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        priority
-                    />
+                <div className="md:w-1/2 w-full relative">
+                    <div className="w-full relative aspect-[16/9] md:h-full">
+                        <Image
+                            src={image}
+                            alt={title}
+                            fill
+                            className="object-contain"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority
+                        />
+                    </div>
                 </div>
 
 
                 {/* Right Content */}
-                <div className="md:w-1/2 p-8 flex flex-col justify-between">
+                <div className="md:w-1/2 p-6 sm:p-8 flex flex-col justify-between">
                     <div>
                         <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
                             {title}
