@@ -15,8 +15,9 @@ import {
   SiSwiper,
 } from "react-icons/si";
 
-import PropadyaLogo from "../img/propadya.svg";
-import SomoyPayLogo from "../img/somoypay.png";
+import NiftyItSolutionLogo from "../img/nifty.png";
+import SoftasellLogo from "../img/softasell.png";
+import NexorabyteLogo from "../img/nexorabyte.png";
 
 import PropadyaWebsiteImage from "../img/projects/prorpadya-site.png";
 import PropadyaDashboardImage from "../img/projects/propadya.png";
@@ -54,32 +55,33 @@ export const skillsData = [
 export const experienceData = [
   {
     id: 1,
-    title: "Front-end Web Developer",
-    company: "Propadya LLC",
-    duration: "Jun 2024 - Present",
+    title: "Frontend Software Developer",
+    company: "Nexorabyte IT Solution",
+    duration: "May 2025 - Aug 2025",
     description:
-      "Developed responsive UIs for real estate applications, ensuring usability and performance. Integrated APIs and optimized speed, enhancing functionality and user engagement. Increased performance by 30% through optimizations and API integrations",
-    logo: PropadyaLogo,
+      "Developed responsive websites for medical, automotive, and corporate clients. Built interactive dashboards, integrated APIs, and optimized front-end performance to deliver scalable and user-friendly web solutions.",
+    logo: NexorabyteLogo,
   },
   {
     id: 2,
-    title: "Junior Front-end Developer",
-    company: "SomoyPay",
-    duration: "Feb 2024 - May 2014",
+    title: "Front-end Developer",
+    company: "Softasell",
+    duration: "Jun 2024 - Feb 2025",
     description:
-      "Built a high-performance payment gateway app with scalable features to optimize transactions and enhance client engagement. Designed and implemented core logic to streamline workflows and boost functionality. Improved response times for faster data handling, delivering a smooth and responsive user experience throughout the app",
-    logo: SomoyPayLogo,
+      "Built responsive real estate websites with property search and listings. Implemented scalable front-end architecture using React and JavaScript, developed interactive dashboards, and improved overall performance and user experience.",
+    logo: SoftasellLogo,
   },
   {
     id: 3,
-    title: "Front-end Developer Intern",
+    title: "Front-end Developer (Intern)",
     company: "Nifty IT Solution",
     duration: "Sep 2023 - Nov 2023",
     description:
-      "Contributed to web development projects using React, TypeScript, and GraphQL, gaining hands-on experiencein modern technologies. Developed front-end features and enhanced applications with React and TypeScript",
-    logo: "https://niftyitsolution.com/wp-content/uploads/2024/06/nifty_thumbs-1.png",
+      "Contributed to a booking management system using React.js, TypeScript, and GraphQL. Enhanced functionality and user experience through efficient front-end development and component-based design.",
+    logo: NiftyItSolutionLogo,
   },
 ];
+
 
 // clients feedback data
 export const clientFeedbacksData = [
