@@ -13,9 +13,7 @@ import {
   SiMui,
   SiRedux,
   SiSwiper,
-  SiCss3,
   SiExpress,
-  SiHtml5,
   SiVercel,
 } from "react-icons/si";
 
@@ -53,8 +51,6 @@ export const skillsData = [
   { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
   { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
   { Icon: SiGit, name: "Git", color: "text-red-400" },
-  { Icon: SiHtml5, name: "HTML5", color: "text-orange-500" },
-  { Icon: SiCss3, name: "CSS3", color: "text-blue-400" },
   { Icon: SiSwiper, name: "Swiper", color: "text-purple-400" },
   { Icon: SiFramer, name: "Framer Motion", color: "text-pink-500" },
   { Icon: SiVercel, name: "Vercel", color: "text-black" }, // Optional

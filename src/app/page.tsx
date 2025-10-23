@@ -1,4 +1,5 @@
 import Contact from '@/components/Contact/Contact'
+import Footer from '@/components/Contact/Footer'
 import Experience from '@/components/Experience/Experience'
 import Hero from '@/components/Hero/Hero'
 import FilterableProjects from '@/components/Projects/Projects'
@@ -24,6 +25,7 @@ const index = () => {
         <Experience />
         <FilterableProjects />
         <Contact />
+        <Footer />
       </main>
     </>
   )

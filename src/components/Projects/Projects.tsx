@@ -22,7 +22,7 @@ const FilterableProjects = () => {
         <InViewMotion>
             <section
                 id="projects"
-                className="p-8 bg-gray-900 lg:px-20 md:max-w-screen-2xl mx-auto"
+                className="p-8 bg-gray-900 lg:px-24 md:max-w-screen-2xl mx-auto"
             >
                 <h2 className="text-3xl font-bold text-white text-center mb-6">
                     Contributed Projects
