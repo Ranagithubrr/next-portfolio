@@ -158,6 +158,7 @@ const Contact = () => {
 
             <button
               type="submit"
+              disabled={loading}
               className="w-full bg-teal-600 hover:bg-teal-500 py-2 rounded-md font-medium transition-colors"
             >
               Send Message
