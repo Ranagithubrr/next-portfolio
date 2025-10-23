@@ -1,7 +1,6 @@
 import { RiReactjsFill, RiTailwindCssFill, RiNodejsFill } from "react-icons/ri";
 import {
   SiJavascript,
-  SiPython,
   SiMongodb,
   SiTypescript,
   SiGit,
@@ -15,8 +14,21 @@ import {
   SiRedux,
   SiSwiper,
 } from "react-icons/si";
+
 import PropadyaLogo from "../img/propadya.svg";
 import SomoyPayLogo from "../img/somoypay.png";
+
+import PropadyaWebsiteImage from "../img/projects/pria-website.png";
+import PropadyaDashboardImage from "../img/projects/propadya.png";
+import NexoraByteImage from "../img/projects/nexorabyte.png";
+
+import SomoypayWebsiteImage from "../img/projects/somoypay-site.png";
+import SomoypayMerchantImage from "../img/projects/merchant-somoypay.png";
+import SomoypayAdminImage from "../img/projects/admin-somoypay.png";
+
+import PrimeClinicImage from "../img/projects/prime-clinic.png";
+import PriaWebsiteImage from "../img/projects/pria-website.png";
+
 
 // skills data
 // ********** if You add new colors, include them in the tailwind.config file safelist ***** //
@@ -112,38 +124,66 @@ export const clientFeedbacksData = [
 export const projectsData = [
   {
     id: 1,
-    title: "E-Commerce Website",
-    description: "A fully functional e-commerce platform.",
-    tech: "fullstack",
-    link: "#",
-    image:
-      "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Propadya Real Estate Website",
+    description:
+      "A modern real estate platform where users can explore properties, view detailed listings, and connect with agents. Designed for smooth navigation and optimized image performance using ImageKit.",
+    tech: "React, Ant Design, Redux Toolkit, ImageKit, REST API",
+    link: "https://propadya.com", // update if live
+    image: PropadyaWebsiteImage,
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    description: "A clean and interactive portfolio.",
-    tech: "react",
-    link: "#",
-    image:
-      "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Propadya Admin Dashboard",
+    description:
+      "An internal dashboard to manage all property listings, agents, and content for the Propadya website. Features secure authentication and advanced filtering options for efficient management.",
+    tech: "React, Redux Toolkit, Ant Design, REST API",
+    link: "#", // replace with actual dashboard link if deployed
+    image: PropadyaDashboardImage,
   },
   {
     id: 3,
-    title: "Real Estate App",
-    description: "Property listing platform with advanced filters.",
-    tech: "fullstack",
-    link: "#",
-    image:
-      "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Slope Medical Solution",
+    description:
+      "A complete healthcare management system with a dynamic website and content dashboard. Built to manage doctors, services, and medical resources seamlessly.",
+    tech: "React, Nest.js, Tailwind CSS, REST API",
+    link: "#", // add real link if deployed
+    image: PrimeClinicImage,
   },
   {
     id: 4,
-    title: "UI Kit Design",
-    description: "A collection of reusable UI components.",
-    tech: "ui",
-    link: "#",
-    image:
-      "https://images.unsplash.com/photo-1729550772333-9133b2c19d7d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "SomoyPay Platform",
+    description:
+      "A digital payment ecosystem with three integrated platforms — website, merchant panel, and admin dashboard — built to handle transactions and user management efficiently.",
+    tech: "React, Redux Toolkit, Ant Design, REST API",
+    link: "#", // optional
+    image: SomoypayWebsiteImage,
+    subProjects: [
+      {
+        name: "Merchant Dashboard",
+        image: SomoypayMerchantImage,
+      },
+      {
+        name: "Admin Dashboard",
+        image: SomoypayAdminImage,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Pria Official Website",
+    description:
+      "A responsive company website highlighting services, projects, and team members. Built with modern UI design and optimized performance.",
+    tech: "Next.js, Tailwind CSS, Framer Motion",
+    link: "#", // add live link if available
+    image: PriaWebsiteImage,
+  },
+  {
+    id: 6,
+    title: "NexoraByte Portfolio",
+    description:
+      "A digital agency portfolio showcasing case studies, services, and creative work. Designed for a sleek and professional presentation.",
+    tech: "Next.js, TypeScript, Tailwind CSS",
+    link: "#", // optional
+    image: NexoraByteImage,
   },
 ];

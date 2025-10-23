@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.swiper-slide.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-active {
+  background-color: transparent !important;
+}

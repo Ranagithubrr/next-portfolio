@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { IoIosCodeDownload } from "react-icons/io";
 
 const Hero = () => {
     const containerVariants = {
@@ -90,7 +91,7 @@ const Hero = () => {
                         <span className="absolute inset-0 w-full h-full bg-[#1F2538] border border-cyan-400/50 rounded-xl"></span>
                         <span className="absolute top-0 left-[-100%] w-[200%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 group-hover:left-[100%] transition-all duration-1000"></span>
                         <span className="relative flex items-center gap-2 text-lg tracking-wide group-hover:scale-105 transition-transform duration-300">
-                            📄 Get Resume
+                            <IoIosCodeDownload className="text-4xl"/> Get Resume
                         </span>
                     </Link>
                 </motion.div>
