@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-10 pb-32 lg:pb-0">
+      <div className="py-5 md:py-20 bg-gray-900 text-white flex flex-col items-center justify-center p-10 lg:pb-10">
         <h2 className="text-3xl font-bold text-center mb-10">Get In Touch</h2>
 
         <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -73,25 +73,35 @@ const Contact = () => {
 
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <span className="p-3 bg-blue-600 rounded-full">
-                  <FiPhone />
-                </span>
-                <p>+123 456 789</p>
-              </div>
-              <div className="flex items-center space-x-4">
-                <span className="p-3 bg-green-500 rounded-full">
-                  <FaWhatsapp />
-                </span>
-                <p>+123 456 789</p>
+                <a href="tel:+8801996722640" className="flex items-center space-x-4">
+                  <span className="p-3 bg-blue-600 rounded-full">
+                    <FiPhone />
+                  </span>
+                  <p>+880-1996-722-640</p>
+                </a>
               </div>
 
               <div className="flex items-center space-x-4">
-                <span className="p-3 bg-red-600 rounded-full">
-                  <FiMail />
-                </span>
-                <p>your-email@example.com</p>
+                <a
+                  href="https://wa.me/8801996722640"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4"
+                >
+                  <span className="p-3 bg-green-500 rounded-full">
+                    <FaWhatsapp />
+                  </span>
+                  <p>+880-1996-722-640</p>
+                </a>
               </div>
-
+              <div className="flex items-center space-x-4">
+                <a href="mailto:ranarr.dev@gmail.com" className="flex items-center space-x-4">
+                  <span className="p-3 bg-red-600 rounded-full">
+                    <FiMail />
+                  </span>
+                  <p>ranarr.dev@gmail.com</p>
+                </a>
+              </div>
               <div className="flex items-center space-x-4">
                 <span className="p-3 bg-teal-600 rounded-full">
                   <FiMapPin />
@@ -117,7 +127,7 @@ const Contact = () => {
               />
               <input
                 type="email"
-                name="email" // Added name attribute
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
@@ -148,6 +158,7 @@ const Contact = () => {
 
             <button
               type="submit"
+              disabled={loading}
               className="w-full bg-teal-600 hover:bg-teal-500 py-2 rounded-md font-medium transition-colors"
             >
               Send Message
@@ -155,9 +166,8 @@ const Contact = () => {
 
             {feedback && (
               <p
-                className={`mt-4 text-center ${
-                  loading ? "text-white" : "text-green-400"
-                }`}
+                className={`mt-4 text-center ${loading ? "text-white" : "text-green-400"
+                  }`}
               >
                 {feedback}
               </p>
