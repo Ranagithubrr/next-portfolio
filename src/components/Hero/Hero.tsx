@@ -74,8 +74,8 @@ const Hero = () => {
                                 View Projects
                             </Link>
                             <a
-                                href="/resume.pdf"
-                                download
+                                href="/resume.pdf"  
+                                target="_blank"                              
                                 className="relative inline-flex items-center gap-2 rounded-full border border-slate-700/70 bg-slate-900/70 px-6 py-3 font-semibold text-slate-100 backdrop-blur transition hover:border-emerald-300/60"
                             >
                                 <IoIosCodeDownload className="text-2xl" /> Download Resume
@@ -109,20 +109,26 @@ const Hero = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <motion.div
-                            className="absolute -inset-4 rounded-[32px] bg-gradient-to-tr from-emerald-400/20 via-cyan-400/10 to-amber-300/20 blur-2xl"
+                            className="absolute -inset-6 rounded-[36px] bg-gradient-to-tr from-emerald-400/20 via-cyan-400/10 to-amber-300/20 blur-2xl"
                             animate={{ scale: [1, 1.05, 1] }}
                             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
                         />
-                        <div className="relative glass-panel rounded-[32px] p-2">
-                            <Image
-                                src={profile}
-                                alt="Masud Rana portrait"
-                                className="h-full w-full rounded-[28px] object-cover"
-                                priority
-                            />
+                        <div className="relative glass-panel rounded-[32px] p-3">
+                            <div className="relative aspect-[4/5] overflow-hidden rounded-[26px]">
+                                <Image
+                                    src={profile}
+                                    alt="Masud Rana portrait"
+                                    className="h-full w-full object-cover"
+                                    priority
+                                />
+                            </div>
                         </div>
-                        <div className="absolute -bottom-5 left-6 rounded-full bg-slate-900/80 px-4 py-2 text-xs uppercase tracking-[0.2em] text-emerald-200 shadow-lg backdrop-blur">
-                            Available for collaboration
+                        <div className="absolute -bottom-8 left-1/2 w-[85%] -translate-x-1/2 text-center glass-panel rounded-2xl px-5 py-5 shadow-2xl">
+                            <p className="text-2xl font-semibold text-white">Masud Rana</p>
+                            <p className="text-sm text-slate-300">Frontend Software Developer</p>
+                            <div className="mt-3 inline-flex items-center rounded-full border border-emerald-300/30 bg-emerald-300/10 px-4 py-2 text-[11px] uppercase tracking-[0.2em] text-emerald-200">
+                                Available for collaboration
+                            </div>
                         </div>
                     </motion.div>
                 </div>
