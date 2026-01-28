@@ -49,7 +49,7 @@ const Hero = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <div className="flex flex-col gap-3 sm:hidden">
+                        <div className="flex flex-col gap-3 sm:hidden mt-12">
                             <a
                                 href="#contact"
                                 className="rounded-full border border-emerald-300/40 bg-emerald-300/10 px-4 py-3 text-sm font-semibold text-emerald-100 backdrop-blur transition hover:border-emerald-200 hover:text-white"
@@ -153,7 +153,7 @@ const Hero = () => {
                                 />
                             </div>
                         </div>
-                        <div className="absolute -bottom-7 sm:-bottom-8 left-1/2 w-[92%] sm:w-[85%] -translate-x-1/2 text-center glass-panel rounded-2xl px-5 py-5 shadow-2xl">
+                        <div className="absolute -bottom-16 md:-bottom-10 left-1/2 w-[92%] sm:w-[85%] -translate-x-1/2 text-center glass-panel rounded-2xl px-5 py-5 shadow-2xl">
                             <p className="text-xl sm:text-2xl font-semibold text-white">Masud Rana</p>
                             <p className="text-sm text-slate-300">Front-end Focused Full-Stack Developer</p>
                             <div className="mt-3 inline-flex items-center rounded-full border border-emerald-300/30 bg-emerald-300/10 px-4 py-2 text-[11px] uppercase tracking-[0.2em] text-emerald-200">
