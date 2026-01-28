@@ -123,33 +123,66 @@ export const educationData = [
 export const blogData = [
   {
     id: 1,
-    title: "Designing dashboards that feel fast",
+    slug: "aws-cicd-deployment",
+    title: "Deploying Next.js to AWS with CI/CD",
     excerpt:
-      "A practical checklist for layout, typography, and spacing so your admin UI feels smooth and responsive.",
-    tag: "UI",
+      "A practical flow using GitHub Actions, S3/CloudFront (or ECS), and safe rollouts for production-ready deployments.",
+    tag: "Deployment",
     date: "Jan 2026",
-    readTime: "5 min read",
-    link: "#",
+    readTime: "8 min read",
+    image: "/blog/deployment.png",
+    content: [
+      "This guide covers a clean deployment pipeline for a Next.js app using GitHub Actions, AWS, and simple rollback steps.",
+      "You will set up build and test steps, artifact storage, and deploy to S3 + CloudFront or a container-based target like ECS.",
+      "The focus is on predictable releases, environment separation, and keeping configuration simple for long-term maintenance.",
+    ],
+    highlights: [
+      "GitHub Actions workflow with build + lint + test",
+      "S3 + CloudFront or ECS deployment strategy",
+      "Cache invalidation and rollback checklist",
+    ],
   },
   {
     id: 2,
-    title: "Motion that improves UX (not noise)",
+    slug: "frontend-performance-checklist",
+    title: "Frontend Performance Checklist (Real-World)",
     excerpt:
-      "How to use small transitions and staggered reveals to guide attention without slowing the page.",
-    tag: "Motion",
+      "A quick, practical checklist I use to ship fast UIs: images, bundle size, rendering, and caching.",
+    tag: "Performance",
     date: "Jan 2026",
-    readTime: "4 min read",
-    link: "#",
+    readTime: "6 min read",
+    image: "/blog/performance.png",
+    content: [
+      "A real-world performance pass focused on the things that move the needle for React and Next.js apps.",
+      "Covers image optimization, bundle splitting, avoiding layout shifts, and managing data fetching.",
+      "Use it before launch and after major feature changes to keep your UI smooth.",
+    ],
+    highlights: [
+      "Image + font optimization basics",
+      "Bundle and hydration improvements",
+      "Cache and prefetch strategy",
+    ],
   },
   {
     id: 3,
-    title: "Clean component structure in React",
+    slug: "scalable-ui-system",
+    title: "Building a Scalable UI System in React",
     excerpt:
-      "A simple way to organize components, hooks, and UI states so projects scale without mess.",
-    tag: "React",
+      "How I structure components, tokens, and variants so teams can move fast without breaking design.",
+    tag: "UI Systems",
     date: "Jan 2026",
-    readTime: "6 min read",
-    link: "#",
+    readTime: "7 min read",
+    image: "/blog/ui-system.svg",
+    content: [
+      "This post breaks down a clean component structure and how to keep styles consistent across a growing product.",
+      "We cover token-driven styling, naming conventions, and when to introduce component variants.",
+      "The goal is to keep UI predictable and maintainable as features scale.",
+    ],
+    highlights: [
+      "Design tokens and naming conventions",
+      "Component variants and usage rules",
+      "Consistent spacing and typography",
+    ],
   },
 ];
 
