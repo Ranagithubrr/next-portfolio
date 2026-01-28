@@ -99,6 +99,8 @@ export const educationData = [
     id: 1,
     title: "Diploma in Computer Engineering",
     status: "Completed",
+    institution: "",
+    duration: "",
     description:
       "I completed my diploma with a focus on core computer subjects and hands-on lab work.",
     highlights: [
@@ -110,6 +112,8 @@ export const educationData = [
     id: 2,
     title: "BSc in Engineering (CSE)",
     status: "Currently studying",
+    institution: "",
+    duration: "",
     description:
       "I am currently studying for my BSc to grow my skills in computer science and software development.",
     highlights: [
