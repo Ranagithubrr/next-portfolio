@@ -61,11 +61,11 @@ const GridViewProjects = () => {
                             transition={{ duration: 0.5, ease: "easeInOut" }}
                             className="glass-panel rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                         >
-                            <div className="flex flex-col h-full max-w-sm rounded-2xl overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
+                            <div className="flex flex-col h-full rounded-2xl overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
                                 {/* Image */}
-                                <div className="w-full h-48 relative flex-shrink-0">
+                                <div className="w-full relative flex-shrink-0 aspect-[16/9] bg-slate-900/60">
                                     <Image
-                                        className="w-full h-full object-cover"
+                                        className="object-cover"
                                         src={item.image}
                                         alt="Project Image"
                                         fill
