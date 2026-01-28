@@ -1,5 +1,6 @@
 import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Contact/Footer'
+import BlogSection from '@/components/Blog/BlogSection'
 import Education from '@/components/Education/Education'
 import Experience from '@/components/Experience/Experience'
 import Hero from '@/components/Hero/Hero'
@@ -26,6 +27,7 @@ const index = () => {
         <Education />
         <Experience />
         <FilterableProjects />
+        <BlogSection />
         <Contact />
         <Footer />
       </main>

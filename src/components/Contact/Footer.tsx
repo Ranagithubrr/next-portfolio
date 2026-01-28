@@ -16,6 +16,7 @@ const Footer = () => {
           <a href="#home" className="hover:text-white transition">About</a>
           <a href="#education" className="hover:text-white transition">Education</a>
           <a href="#projects" className="hover:text-white transition">Projects</a>
+          <a href="#blog" className="hover:text-white transition">Blog</a>
           <a href="#contact" className="hover:text-white transition">Contact</a>
         </div>
 

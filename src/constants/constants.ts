@@ -35,26 +35,32 @@ import PriaWebsiteImage from "../img/projects/pria-website.png";
 
 // skills data
 // ********** if You add new colors, include them in the tailwind.config file safelist ***** //
-export const skillsData = [
-  { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
-  { Icon: SiNextdotjs, name: "Next.js", color: "text-black" },
-  { Icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
-  { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
-  { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
-  { Icon: SiMui, name: "Material UI", color: "text-blue-500" },
-  { Icon: SiAntdesign, name: "Ant Design", color: "text-blue-600" },
-  { Icon: SiRedux, name: "Redux Toolkit", color: "text-purple-600" },
-  { Icon: SiGraphql, name: "GraphQL", color: "text-pink-400" },
-  { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
-  { Icon: SiExpress, name: "Express.js", color: "text-gray-500" },
-  { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
-  { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
-  { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
-  { Icon: SiGit, name: "Git", color: "text-red-400" },
-  { Icon: SiSwiper, name: "Swiper", color: "text-purple-400" },
-  { Icon: SiFramer, name: "Framer Motion", color: "text-pink-500" },
-  { Icon: SiVercel, name: "Vercel", color: "text-black" }, // Optional
-];
+export const skillsData = {
+  frontend: [
+    { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
+    { Icon: SiNextdotjs, name: "Next.js", color: "text-black" },
+    { Icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
+    { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
+    { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
+    { Icon: SiMui, name: "Material UI", color: "text-blue-500" },
+    { Icon: SiAntdesign, name: "Ant Design", color: "text-blue-600" },
+    { Icon: SiRedux, name: "Redux Toolkit", color: "text-purple-600" },
+    { Icon: SiSwiper, name: "Swiper", color: "text-purple-400" },
+    { Icon: SiFramer, name: "Framer Motion", color: "text-pink-500" },
+  ],
+  backend: [
+    { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
+    { Icon: SiExpress, name: "Express.js", color: "text-gray-500" },
+    { Icon: SiGraphql, name: "GraphQL", color: "text-pink-400" },
+    { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
+    { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
+  ],
+  deployment: [
+    { Icon: SiGit, name: "Git", color: "text-red-400" },
+    { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
+    { Icon: SiVercel, name: "Vercel", color: "text-black" },
+  ],
+};
 
 // experience data
 export const experienceData = [
@@ -110,6 +116,40 @@ export const educationData = [
       "Learning advanced topics in systems and software",
       "Continuing to build projects with modern web tech",
     ],
+  },
+];
+
+// blog data
+export const blogData = [
+  {
+    id: 1,
+    title: "Designing dashboards that feel fast",
+    excerpt:
+      "A practical checklist for layout, typography, and spacing so your admin UI feels smooth and responsive.",
+    tag: "UI",
+    date: "Jan 2026",
+    readTime: "5 min read",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Motion that improves UX (not noise)",
+    excerpt:
+      "How to use small transitions and staggered reveals to guide attention without slowing the page.",
+    tag: "Motion",
+    date: "Jan 2026",
+    readTime: "4 min read",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Clean component structure in React",
+    excerpt:
+      "A simple way to organize components, hooks, and UI states so projects scale without mess.",
+    tag: "React",
+    date: "Jan 2026",
+    readTime: "6 min read",
+    link: "#",
   },
 ];
 
