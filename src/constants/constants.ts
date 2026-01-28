@@ -87,6 +87,32 @@ export const experienceData = [
   },
 ];
 
+// education data
+export const educationData = [
+  {
+    id: 1,
+    title: "Diploma in Computer Engineering",
+    status: "Completed",
+    description:
+      "I completed my diploma with a focus on core computer subjects and hands-on lab work.",
+    highlights: [
+      "Studied programming, data basics, and networking",
+      "Built a strong base in math and logic",
+    ],
+  },
+  {
+    id: 2,
+    title: "BSc in Engineering (CSE)",
+    status: "Currently studying",
+    description:
+      "I am currently studying for my BSc to grow my skills in computer science and software development.",
+    highlights: [
+      "Learning advanced topics in systems and software",
+      "Continuing to build projects with modern web tech",
+    ],
+  },
+];
+
 
 // clients feedback data
 export const clientFeedbacksData = [

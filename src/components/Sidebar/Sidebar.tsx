@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
-import { FaUser, FaTools, FaBriefcase, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+import { FaUser, FaTools, FaBriefcase, FaProjectDiagram, FaEnvelope, FaGraduationCap } from "react-icons/fa";
 
 interface IconItem {
   icon: IconType;
@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   // Improved handleScroll: current section remains active until next section crosses 1/3 viewport
   const handleScroll = () => {
-    const sections = ["home", "skills", "experience", "projects", "contact"];
+    const sections = ["home", "skills", "education", "experience", "projects", "contact"];
     let currentSection = sections[0]; // default
 
     for (let i = 0; i < sections.length; i++) {
@@ -65,6 +65,7 @@ const Sidebar = () => {
   const icons: IconItem[] = [
     { icon: FaUser, label: "Home", sectionId: "home" },
     { icon: FaTools, label: "Skills", sectionId: "skills" },
+    { icon: FaGraduationCap, label: "Education", sectionId: "education" },
     { icon: FaBriefcase, label: "Experience", sectionId: "experience" },
     { icon: FaProjectDiagram, label: "Projects", sectionId: "projects" },
     { icon: FaEnvelope, label: "Contact", sectionId: "contact" },
