@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
 
         {/* Middle: Quick Links */}
-        <div className="flex space-x-6 mb-4 md:mb-0">
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 mb-4 md:mb-0">
           <a href="#home" className="hover:text-white transition">About</a>
           <a href="#education" className="hover:text-white transition">Education</a>
           <a href="#projects" className="hover:text-white transition">Projects</a>
