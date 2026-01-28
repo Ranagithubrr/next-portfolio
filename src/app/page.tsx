@@ -1,5 +1,7 @@
 import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Contact/Footer'
+import BlogSection from '@/components/Blog/BlogSection'
+import Education from '@/components/Education/Education'
 import Experience from '@/components/Experience/Experience'
 import Hero from '@/components/Hero/Hero'
 import FilterableProjects from '@/components/Projects/Projects'
@@ -18,12 +20,14 @@ const index = () => {
           <link rel="icon" href="/favicon.ico" />
         </div>
       </Head>
-      <main>
+      <main className="sm:pl-24">
         <Sidebar />
         <Hero />
         <SkillsSection />
+        <Education />
         <Experience />
         <FilterableProjects />
+        <BlogSection />
         <Contact />
         <Footer />
       </main>

@@ -35,26 +35,32 @@ import PriaWebsiteImage from "../img/projects/pria-website.png";
 
 // skills data
 // ********** if You add new colors, include them in the tailwind.config file safelist ***** //
-export const skillsData = [
-  { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
-  { Icon: SiNextdotjs, name: "Next.js", color: "text-black" },
-  { Icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
-  { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
-  { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
-  { Icon: SiMui, name: "Material UI", color: "text-blue-500" },
-  { Icon: SiAntdesign, name: "Ant Design", color: "text-blue-600" },
-  { Icon: SiRedux, name: "Redux Toolkit", color: "text-purple-600" },
-  { Icon: SiGraphql, name: "GraphQL", color: "text-pink-400" },
-  { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
-  { Icon: SiExpress, name: "Express.js", color: "text-gray-500" },
-  { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
-  { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
-  { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
-  { Icon: SiGit, name: "Git", color: "text-red-400" },
-  { Icon: SiSwiper, name: "Swiper", color: "text-purple-400" },
-  { Icon: SiFramer, name: "Framer Motion", color: "text-pink-500" },
-  { Icon: SiVercel, name: "Vercel", color: "text-black" }, // Optional
-];
+export const skillsData = {
+  frontend: [
+    { Icon: RiReactjsFill, name: "React", color: "text-teal-400" },
+    { Icon: SiNextdotjs, name: "Next.js", color: "text-black" },
+    { Icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
+    { Icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
+    { Icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-teal-400" },
+    { Icon: SiMui, name: "Material UI", color: "text-blue-500" },
+    { Icon: SiAntdesign, name: "Ant Design", color: "text-blue-600" },
+    { Icon: SiRedux, name: "Redux Toolkit", color: "text-purple-600" },
+    { Icon: SiSwiper, name: "Swiper", color: "text-purple-400" },
+    { Icon: SiFramer, name: "Framer Motion", color: "text-pink-500" },
+  ],
+  backend: [
+    { Icon: RiNodejsFill, name: "Node.js", color: "text-green-500" },
+    { Icon: SiExpress, name: "Express.js", color: "text-gray-500" },
+    { Icon: SiGraphql, name: "GraphQL", color: "text-pink-400" },
+    { Icon: SiMongodb, name: "MongoDB", color: "text-green-400" },
+    { Icon: SiFirebase, name: "Firebase", color: "text-yellow-500" },
+  ],
+  deployment: [
+    { Icon: SiGit, name: "Git", color: "text-red-400" },
+    { Icon: SiAxios, name: "Axios", color: "text-blue-400" },
+    { Icon: SiVercel, name: "Vercel", color: "text-black" },
+  ],
+};
 
 // experience data
 export const experienceData = [
@@ -84,6 +90,103 @@ export const experienceData = [
     description:
       "Contributed to a booking management system using React.js, TypeScript, and GraphQL. Enhanced functionality and user experience through efficient front-end development and component-based design.",
     logo: NiftyItSolutionLogo,
+  },
+];
+
+// education data
+export const educationData = [
+  {
+    id: 1,
+    title: "Diploma in Computer Engineering",
+    status: "Completed",
+    institution: "",
+    duration: "",
+    description:
+      "I completed my diploma with a focus on core computer subjects and hands-on lab work.",
+    highlights: [
+      "Studied programming, data basics, and networking",
+      "Built a strong base in math and logic",
+    ],
+  },
+  {
+    id: 2,
+    title: "BSc in Engineering (CSE)",
+    status: "Currently studying",
+    institution: "",
+    duration: "",
+    description:
+      "I am currently studying for my BSc to grow my skills in computer science and software development.",
+    highlights: [
+      "Learning advanced topics in systems and software",
+      "Continuing to build projects with modern web tech",
+    ],
+  },
+];
+
+// blog data
+export const blogData = [
+  {
+    id: 1,
+    slug: "aws-cicd-deployment",
+    title: "Deploying Next.js to AWS with CI/CD",
+    excerpt:
+      "A practical flow using GitHub Actions, S3/CloudFront (or ECS), and safe rollouts for production-ready deployments.",
+    tag: "Deployment",
+    date: "Jan 2026",
+    readTime: "8 min read",
+    image: "/blog/deployment.png",
+    content: [
+      "This guide covers a clean deployment pipeline for a Next.js app using GitHub Actions, AWS, and simple rollback steps.",
+      "You will set up build and test steps, artifact storage, and deploy to S3 + CloudFront or a container-based target like ECS.",
+      "The focus is on predictable releases, environment separation, and keeping configuration simple for long-term maintenance.",
+    ],
+    highlights: [
+      "GitHub Actions workflow with build + lint + test",
+      "S3 + CloudFront or ECS deployment strategy",
+      "Cache invalidation and rollback checklist",
+    ],
+  },
+  {
+    id: 2,
+    slug: "frontend-performance-checklist",
+    title: "Frontend Performance Checklist (Real-World)",
+    excerpt:
+      "A quick, practical checklist I use to ship fast UIs: images, bundle size, rendering, and caching.",
+    tag: "Performance",
+    date: "Jan 2026",
+    readTime: "6 min read",
+    image: "/blog/performance.png",
+    content: [
+      "A real-world performance pass focused on the things that move the needle for React and Next.js apps.",
+      "Covers image optimization, bundle splitting, avoiding layout shifts, and managing data fetching.",
+      "Use it before launch and after major feature changes to keep your UI smooth.",
+    ],
+    highlights: [
+      "Image + font optimization basics",
+      "Bundle and hydration improvements",
+      "Cache and prefetch strategy",
+    ],
+  },
+  {
+    id: 3,
+    slug: "scalable-ui-system",
+    title: "Building a Scalable UI System in React",
+    excerpt:
+      "How I structure components, tokens, and variants so teams can move fast without breaking design.",
+    tag: "UI Systems",
+    date: "Jan 2026",
+    readTime: "7 min read",
+    image: "/blog/ui-system.svg",
+    content: [
+      "This post breaks down a clean component structure and how to keep styles consistent across a growing product.",
+      "We cover token-driven styling, naming conventions, and when to introduce component variants.",
+      "The goal is to keep UI predictable and maintainable as features scale.",
+    ],
+    highlights: [
+      "Design tokens and naming conventions",
+      "Component variants and usage rules",
+      "Consistent spacing and typography",
+    ],
   },
 ];
 

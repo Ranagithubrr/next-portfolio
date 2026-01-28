@@ -22,32 +22,35 @@ const FilterableProjects = () => {
         <InViewMotion>
             <section
                 id="projects"
-                className="p-8 bg-gray-900 lg:px-24 md:max-w-screen-2xl mx-auto"
+                className="py-20 px-6 lg:px-16 md:max-w-screen-2xl mx-auto"
             >
-                <h2 className="text-3xl font-bold text-white text-center mb-6">
-                    Contributed Projects
+                <h2 className="text-3xl sm:text-4xl font-semibold text-white text-center mb-4">
+                    Featured Projects
                 </h2>
-                <p className="text-gray-300 text-center mb-10 md:max-w-3xl mx-auto">
-                    A showcase of web applications I have built and contributed to, highlighting modern technologies, real-world functionality, and responsive, user-friendly designs.
+                <p className="text-slate-300 text-center mb-10 md:max-w-3xl mx-auto">
+                    A curated mix of products, platforms, and experiments focused on polished UI, responsive layouts, and modern front-end architecture.
                 </p>
 
-
-                <div className="flex justify-center mx-auto md:mx-0 md:ms-auto gap-2 w-52 relative border-teal-400 border-2 rounded-full overflow-hidden">
-                    <div
-                        className="z-10 h-full cursor-pointer p-2"
+                <div className="flex justify-center md:justify-end mx-auto md:mx-0 gap-2 w-56 relative rounded-full overflow-hidden border border-slate-700/70 bg-slate-900/60 backdrop-blur">
+                    <button
+                        className={`z-10 flex-1 cursor-pointer py-2 text-sm font-semibold transition-colors ${
+                            activeView === "list" ? "text-slate-900" : "text-slate-200"
+                        }`}
                         onClick={() => handleChangeView("list")}
                     >
                         Slide View
-                    </div>
-                    <div
-                        className="z-10 h-full cursor-pointer p-2"
+                    </button>
+                    <button
+                        className={`z-10 flex-1 cursor-pointer py-2 text-sm font-semibold transition-colors ${
+                            activeView === "grid" ? "text-slate-900" : "text-slate-200"
+                        }`}
                         onClick={() => handleChangeView("grid")}
                     >
                         Grid View
-                    </div>
+                    </button>
 
                     <motion.div
-                        className="bg-teal-500 w-1/2 h-full absolute top-0 left-0"
+                        className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-amber-300 w-1/2 h-full absolute top-0 left-0"
                         animate={{ x: activeView === "list" ? 0 : "100%" }}
                         transition={{ type: "tween", duration: 0.3 }}
                     />

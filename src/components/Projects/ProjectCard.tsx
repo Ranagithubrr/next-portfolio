@@ -19,19 +19,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
     return (
         <div
-            className="mx-auto bg-gray-900 rounded-2xl overflow-hidden
-        shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.25)]
-        transition-all duration-300 max-w-7xl h-[600px] md:h-[300px] 2xl:h-[350px]"
+            className="mx-auto glass-panel rounded-3xl overflow-hidden
+        shadow-[0_24px_60px_rgba(2,6,23,0.5)] hover:shadow-[0_32px_80px_rgba(2,6,23,0.6)]
+        transition-all duration-300 max-w-7xl min-h-[520px] md:min-h-[320px]"
         >
             <div className="flex flex-col md:flex-row">
                 {/* Left Image */}
                 <div className="md:w-1/2 w-full relative">
-                    <div className="w-full relative aspect-[16/9] md:h-full">
+                    <div className="relative h-[240px] sm:h-[300px] md:h-full md:min-h-[320px] w-full">
                         <Image
                             src={image}
                             alt={title}
                             fill
-                            className="object-contain"
+                            className="object-cover"
                             sizes="(max-width: 768px) 100vw, 50vw"
                             priority
                         />
@@ -42,15 +42,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 {/* Right Content */}
                 <div className="md:w-1/2 p-6 sm:p-8 flex flex-col justify-between">
                     <div>
-                        <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                        <h2 className="text-2xl font-semibold text-white mb-2">
                             {title}
                         </h2>
 
                         {/* Technologies */}
-                        <p className="text-sm text-teal-500 font-medium mb-4">{tech}</p>
+                        <p className="text-sm text-emerald-300 font-medium mb-4">{tech}</p>
 
                         {/* Description */}
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        <p className="text-slate-300 leading-relaxed">
                             {description}
                         </p>
                     </div>
@@ -61,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-6 inline-block px-5 py-2 rounded-xl border-2 border-teal-500 text-teal-600 dark:text-white font-medium hover:bg-teal-500 hover:text-white transition-all text-center"
+                            className="mt-6 inline-block px-5 py-2 rounded-xl border border-emerald-300/50 text-emerald-200 font-medium hover:bg-emerald-400 hover:text-slate-900 transition-all text-center"
                         >
                             View Project
                         </a>

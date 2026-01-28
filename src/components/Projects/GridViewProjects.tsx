@@ -19,14 +19,14 @@ const GridViewProjects = () => {
     };
     return (
         <div>
-            <div className="flex justify-center space-x-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-3 mb-10">
                 {["all", "web-site", "web-app"].map((btn) => (
                     <motion.button
                         key={btn}
                         whileHover={{ scale: 1.1 }}
-                        className={`relative px-5 py-1 rounded-full font-medium border-2 overflow-hidden 
+                        className={`relative px-5 py-2 rounded-full font-medium border overflow-hidden 
                              transition-all duration-300 
-                             ${activeBtn === btn ? "text-white border-teal-700" : "text-white border-teal-700"}`}
+                             ${activeBtn === btn ? "text-slate-900 border-transparent" : "text-slate-200 border-slate-700/70 bg-slate-900/50"}`}
                         onClick={() => handleFilterClick(btn)}
                     >
                         {/* Button text */}
@@ -39,7 +39,7 @@ const GridViewProjects = () => {
                             animate={{ scaleX: activeBtn === btn ? 1 : 0 }}
                             whileHover={{ scaleX: 1 }} // Expand background on hover
                             transition={{ duration: 0.7, ease: "easeInOut" }}
-                            className="absolute inset-0 bg-teal-700 rounded-full origin-left"
+                            className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-cyan-400 to-amber-300 rounded-full origin-left"
                         ></motion.span>
                     </motion.button>
 
@@ -59,13 +59,13 @@ const GridViewProjects = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 1, scale: 0 }}
                             transition={{ duration: 0.5, ease: "easeInOut" }}
-                            className="bg-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="glass-panel rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                         >
-                            <div className="flex flex-col h-full max-w-sm bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
+                            <div className="flex flex-col h-full rounded-2xl overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl duration-500 ease-in-out">
                                 {/* Image */}
-                                <div className="w-full h-48 relative flex-shrink-0">
+                                <div className="w-full relative flex-shrink-0 aspect-[16/9] bg-slate-900/60">
                                     <Image
-                                        className="w-full h-full object-cover"
+                                        className="object-cover"
                                         src={item.image}
                                         alt="Project Image"
                                         fill
@@ -76,7 +76,7 @@ const GridViewProjects = () => {
                                 {/* Content */}
                                 <div className="p-6 flex flex-col flex-1">
                                     <h2 className="text-xl font-semibold text-white">{item.title}</h2>
-                                    <p className="text-gray-400 mt-2 line-clamp-3 flex-1">
+                                    <p className="text-slate-300 mt-2 line-clamp-3 flex-1">
                                         {item.description}
                                     </p>
 
@@ -84,12 +84,12 @@ const GridViewProjects = () => {
                                         <Link
                                             href={item.link}
                                             target='_blank'
-                                            className="text-teal-400 hover:text-teal-300 font-medium transition-colors"
+                                            className="text-emerald-300 hover:text-emerald-200 font-medium transition-colors"
                                         >
                                             View Details &rarr;
                                         </Link>
                                         <div className="flex space-x-2 mt-2 xl:mt-0">
-                                            <span className="px-3 py-1 text-sm bg-gray-800 text-teal-300 rounded-full">
+                                            <span className="px-3 py-1 text-sm bg-slate-900/70 text-slate-200 rounded-full border border-slate-700/70">
                                              Featured Project
                                             </span>
                                         </div>
