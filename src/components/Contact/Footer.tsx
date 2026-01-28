@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8 pb-28 lg:pb-10">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <footer className="py-10 pb-28 lg:pb-10 text-slate-300 border-t border-slate-800/60">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left: Name / Copyright */}
         <div className="mb-4 md:mb-0 text-center md:text-left">
           <p>&copy; {new Date().getFullYear()} Masud Rana. All rights reserved.</p>
@@ -13,7 +13,7 @@ const Footer = () => {
 
         {/* Middle: Quick Links */}
         <div className="flex space-x-6 mb-4 md:mb-0">
-          <a href="#" className="hover:text-white transition">About</a>
+          <a href="#home" className="hover:text-white transition">About</a>
           <a href="#projects" className="hover:text-white transition">Projects</a>
           <a href="#contact" className="hover:text-white transition">Contact</a>
         </div>

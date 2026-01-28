@@ -60,13 +60,16 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="py-5 md:py-20 bg-gray-900 text-white flex flex-col items-center justify-center p-10 lg:pb-10">
-        <h2 className="text-3xl font-bold text-center mb-10">Get In Touch</h2>
+      <div className="py-20 text-white flex flex-col items-center justify-center px-6 lg:px-16 lg:pb-10">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-4">Get In Touch</h2>
+        <p className="text-slate-300 text-center mb-12 max-w-2xl">
+          Let&apos;s build something memorable together. Reach out and I&apos;ll respond quickly.
+        </p>
 
         <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="space-y-6">
-            <h2 className="text-2xl font-medium">Contact Information</h2>
-            <p className="text-gray-400">
+          <div className="space-y-6 glass-panel rounded-3xl p-8">
+            <h2 className="text-2xl font-medium text-white">Contact Information</h2>
+            <p className="text-slate-300">
               I would love to hear from you! Feel free to reach out through any
               of the following methods:
             </p>
@@ -74,7 +77,7 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <a href="tel:+8801996722640" className="flex items-center space-x-4">
-                  <span className="p-3 bg-blue-600 rounded-full">
+                  <span className="p-3 bg-emerald-500/20 rounded-full text-emerald-200 ring-1 ring-emerald-400/30">
                     <FiPhone />
                   </span>
                   <p>+880-1996-722-640</p>
@@ -88,7 +91,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4"
                 >
-                  <span className="p-3 bg-green-500 rounded-full">
+                  <span className="p-3 bg-emerald-500/20 rounded-full text-emerald-200 ring-1 ring-emerald-400/30">
                     <FaWhatsapp />
                   </span>
                   <p>+880-1996-722-640</p>
@@ -96,14 +99,14 @@ const Contact = () => {
               </div>
               <div className="flex items-center space-x-4">
                 <a href="mailto:ranarr.dev@gmail.com" className="flex items-center space-x-4">
-                  <span className="p-3 bg-red-600 rounded-full">
+                  <span className="p-3 bg-emerald-500/20 rounded-full text-emerald-200 ring-1 ring-emerald-400/30">
                     <FiMail />
                   </span>
                   <p>ranarr.dev@gmail.com</p>
                 </a>
               </div>
               <div className="flex items-center space-x-4">
-                <span className="p-3 bg-teal-600 rounded-full">
+                <span className="p-3 bg-emerald-500/20 rounded-full text-emerald-200 ring-1 ring-emerald-400/30">
                   <FiMapPin />
                 </span>
                 <p>Dhaka, Bangladesh</p>
@@ -113,7 +116,7 @@ const Contact = () => {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-gray-800 p-8 rounded-xl shadow-lg space-y-6"
+            className="glass-panel p-8 rounded-3xl space-y-6"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
@@ -122,7 +125,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="w-full px-4 py-2 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+                className="w-full px-4 py-3 bg-slate-950/80 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-300/60"
                 required
               />
               <input
@@ -131,7 +134,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="w-full px-4 py-2 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+                className="w-full px-4 py-3 bg-slate-950/80 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-300/60"
                 required
               />
             </div>
@@ -142,7 +145,7 @@ const Contact = () => {
               value={formData.subject}
               onChange={handleChange}
               placeholder="Subject"
-              className="w-full px-4 py-2 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="w-full px-4 py-3 bg-slate-950/80 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-300/60"
               required
             />
 
@@ -152,21 +155,21 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Your Message"
               rows={5}
-              className="w-full px-4 py-2 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="w-full px-4 py-3 bg-slate-950/80 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-300/60"
               required
             ></textarea>
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-teal-600 hover:bg-teal-500 py-2 rounded-md font-medium transition-colors"
+              className="w-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-amber-300 py-3 rounded-xl font-semibold text-slate-900 transition-transform hover:-translate-y-1"
             >
               Send Message
             </button>
 
             {feedback && (
               <p
-                className={`mt-4 text-center ${loading ? "text-white" : "text-green-400"
+                className={`mt-4 text-center ${loading ? "text-slate-200" : "text-emerald-300"
                   }`}
               >
                 {feedback}

@@ -44,7 +44,7 @@ const ListviewProjects: React.FC = () => {
                     shadowOffset: 20,
                     shadowScale: 0.94,
                 }}
-                className="rounded-2xl shadow-lg cursor-grab"
+                className="rounded-3xl shadow-2xl cursor-grab"
             >
                 {projectsData.map((project) => (
                     <SwiperSlide key={project.id}>
@@ -60,11 +60,11 @@ const ListviewProjects: React.FC = () => {
             </Swiper>
 
             {/* ✅ Custom navigation buttons (only once) */}
-            <div className="flex justify-end gap-6 mt-4 2xl:mt-16">
-                <button ref={prevRef} className="text-3xl text-teal-500 hover:text-teal-300 transition">
+            <div className="flex justify-end gap-4 mt-6 2xl:mt-16">
+                <button ref={prevRef} className="glass-panel rounded-full p-3 text-2xl text-emerald-200 hover:text-white transition">
                     <FaArrowCircleLeft />
                 </button>
-                <button ref={nextRef} className="text-3xl text-teal-500 hover:text-teal-300 transition">
+                <button ref={nextRef} className="glass-panel rounded-full p-3 text-2xl text-emerald-200 hover:text-white transition">
                     <FaArrowCircleRight />
                 </button>
             </div>
