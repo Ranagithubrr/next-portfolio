@@ -125,7 +125,7 @@ const Sidebar = () => {
       </motion.div>
 
       {/* Mobile bottom navbar */}
-      <div className="sm:hidden fixed z-30 bottom-4 left-1/2 -translate-x-1/2 w-11/12 py-3 rounded-full flex justify-around shadow-xl px-3 glass-panel">
+      <div className="sm:hidden fixed z-30 bottom-4 left-1/2 -translate-x-1/2 w-[92%] max-w-[420px] py-2 rounded-full flex items-center justify-between shadow-xl px-2 glass-panel">
         {icons.map((item) => {
           const isActive = activeSection === item.sectionId;
           const Icon = item.icon;
@@ -133,11 +133,11 @@ const Sidebar = () => {
             <button
               key={item.sectionId}
               onClick={() => scrollToSection(item.sectionId)}
-              className={`p-3 rounded-full transition-all duration-300 ease-in-out outline-none border-none focus:ring-2 focus:ring-emerald-300/60
+              className={`h-10 w-10 rounded-full transition-all duration-300 ease-in-out outline-none border-none focus:ring-2 focus:ring-emerald-300/60 flex items-center justify-center
                  ${isActive ? "bg-gradient-to-r from-emerald-400 via-cyan-400 to-amber-300 text-slate-900 shadow-lg" : "bg-slate-900/70 text-slate-200 hover:bg-slate-800/70 hover:text-white"}`}
               aria-label={item.label}
             >
-              <Icon className={`text-2xl lg:text-3xl pointer-events-none ${isActive ? "text-slate-900" : ""}`} />
+              <Icon className={`text-xl pointer-events-none ${isActive ? "text-slate-900" : ""}`} />
             </button>
           );
         })}
