@@ -33,13 +33,17 @@ const FilterableProjects = () => {
 
                 <div className="flex justify-center md:justify-end mx-auto md:mx-0 gap-2 w-56 relative rounded-full overflow-hidden border border-slate-700/70 bg-slate-900/60 backdrop-blur">
                     <button
-                        className="z-10 flex-1 cursor-pointer py-2 text-sm font-medium text-slate-200"
+                        className={`z-10 flex-1 cursor-pointer py-2 text-sm font-semibold transition-colors ${
+                            activeView === "list" ? "text-slate-900" : "text-slate-200"
+                        }`}
                         onClick={() => handleChangeView("list")}
                     >
                         Slide View
                     </button>
                     <button
-                        className="z-10 flex-1 cursor-pointer py-2 text-sm font-medium text-slate-200"
+                        className={`z-10 flex-1 cursor-pointer py-2 text-sm font-semibold transition-colors ${
+                            activeView === "grid" ? "text-slate-900" : "text-slate-200"
+                        }`}
                         onClick={() => handleChangeView("grid")}
                     >
                         Grid View

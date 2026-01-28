@@ -19,7 +19,7 @@ const index = () => {
           <link rel="icon" href="/favicon.ico" />
         </div>
       </Head>
-      <main>
+      <main className="sm:pl-24">
         <Sidebar />
         <Hero />
         <SkillsSection />

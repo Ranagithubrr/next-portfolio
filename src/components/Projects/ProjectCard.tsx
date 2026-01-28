@@ -21,12 +21,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div
             className="mx-auto glass-panel rounded-3xl overflow-hidden
         shadow-[0_24px_60px_rgba(2,6,23,0.5)] hover:shadow-[0_32px_80px_rgba(2,6,23,0.6)]
-        transition-all duration-300 max-w-7xl h-[600px] md:h-[320px] 2xl:h-[360px]"
+        transition-all duration-300 max-w-7xl min-h-[520px] md:min-h-[320px]"
         >
             <div className="flex flex-col md:flex-row">
                 {/* Left Image */}
                 <div className="md:w-1/2 w-full relative">
-                    <div className="w-full relative aspect-[16/9] md:h-full">
+                    <div className="relative h-[240px] sm:h-[300px] md:h-full md:min-h-[320px] w-full">
                         <Image
                             src={image}
                             alt={title}
